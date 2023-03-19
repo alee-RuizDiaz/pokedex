@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*, *::after, *::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: "#FCFCFC";
+}
+
+body {
+  min-height: 100%;
+  height: auto;
+  width: auto;
+  min-width: 100%;
+  font-family: inherit;
+}
