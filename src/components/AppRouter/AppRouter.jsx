@@ -9,7 +9,6 @@ const AppRouter = () => {
     return (
         <div className='lg:px-[20rem] px-5'>
             <NavBar/>
-            <NavFilter/>
             <Routes>
                     <Route index element={<Home/>}/>
                     <Route path='/pokemon/:id' element={<PokemonPage/>}/>

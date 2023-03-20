@@ -1,6 +1,13 @@
+import NavFilter from '../../NavFilter/NavFilter'
+import PokemonList from '../../PokemonList/PokemonList'
+
+
 const Home = () => {
     return (
-        <h1>Home</h1>
+        <div>
+            <NavFilter/>
+            <PokemonList/>
+        </div>
     )
 }
 

@@ -1,6 +1,8 @@
 const PokemonPage = () => {
     return (
-        <h1>PokemonPage</h1>
+        <div>
+            PokemonPage
+        </div>
     )
 }
 

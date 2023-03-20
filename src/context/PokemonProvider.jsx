@@ -11,7 +11,7 @@ const PokemonProvider = ({children}) => {
     // Utilizar custom hooks - useForms 
 
     const {valueSearch, onInputChange, onResetForm} = useForm({
-        valueSearch: ''
+        valueSearch: '',
     })
     
     // Estados simplis
@@ -27,9 +27,9 @@ const PokemonProvider = ({children}) => {
         const res = await fetch(`${baseURL}pokemon?limit=${limit}&offset=${offset}`)
         const data = await res.json();
         
-        const promises = data.results.map(async(pokemon) => {
-            const res = await fetch(pokemon.url)
-            const data = await res.json()
+        const promises = data.results.map(async pokemon => {
+            const res = await fetch(pokemon.url);
+            const data = await res.json();
             return data
         })
 
@@ -50,9 +50,9 @@ const PokemonProvider = ({children}) => {
         const res = await fetch(`${baseURL}pokemon?limit=100000&offset=0`)
         const data = await res.json();
         
-        const promises = data.results.map(async(pokemon) => {
-            const res = await fetch(pokemon.url)
-            const data = await res.json()
+        const promises = data.results.map(async pokemon  => {
+            const res = await fetch(pokemon.url);
+            const data = await res.json();
             return data
         })
 
