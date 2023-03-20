@@ -3,16 +3,16 @@ import { PokemonContext } from "../../context/PokemonContext"
 
 const Filter = () => {
 
-    const {active} = useContext(PokemonContext)
+    const {active, handleCheackbox} = useContext(PokemonContext)
 
     return (
-        <div className={`flex justify-center fixed top-0  w-[15rem] text-[#555] bg-[#f2f2f2] h-full transition-all duration-[.3s] ease-linear ${active ? 'left-[-19rem]' : 'left-0'}`}>
+        <div className={`flex justify-center fixed top-0  w-[15rem] text-[#555] bg-[#f2f2f2] h-full transition-all duration-[.3s] ease-linear ${active ? 'left-0' : 'left-[-19rem]'}`}>
             <div className="flex flex-col gap-5 pt-[5rem]">
                 <span className="font-bold text-2xl">Tipo</span>
                 <div className='group-type'>
                     <input
                         type='checkbox'
-                        //////////onChange={handleCheckbox}
+                        onChange={handleCheackbox}
                         name='grass'
                         id='grass'
                     />
@@ -21,7 +21,7 @@ const Filter = () => {
                 <div className='group-type'>
                     <input
                         type='checkbox'
-                        //////////onChange={handleCheckbox}
+                        onChange={handleCheackbox}
                         name='fire'
                         id='fire'
                     />
@@ -30,7 +30,7 @@ const Filter = () => {
                 <div className='group-type'>
                     <input
                         type='checkbox'
-                        //////////onChange={handleCheckbox}
+                        onChange={handleCheackbox}
                         name='bug'
                         id='bug'
                     />
@@ -39,7 +39,7 @@ const Filter = () => {
                 <div className='group-type'>
                     <input
                         type='checkbox'
-                        ////////onChange={handleCheckbox}
+                        onChange={handleCheackbox}
                         name='fairy'
                         id='fairy'
                     />
@@ -48,7 +48,7 @@ const Filter = () => {
                 <div className='group-type'>
                     <input
                         type='checkbox'
-                        ////////onChange={handleCheckbox}
+                        onChange={handleCheackbox}
                         name='dragon'
                         id='dragon'
                     />
@@ -57,7 +57,7 @@ const Filter = () => {
                 <div className='group-type'>
                     <input
                         type='checkbox'
-                        ////////onChange={handleCheckbox}
+                        onChange={handleCheackbox}
                         name='shadow'
                         id='shadow'
                     />
@@ -66,7 +66,7 @@ const Filter = () => {
                 <div className='group-type'>
                     <input
                         type='checkbox'
-                        ////////onChange={handleCheckbox}
+                        onChange={handleCheackbox}
                         name='ground'
                         id='ground'
                     />
@@ -75,7 +75,7 @@ const Filter = () => {
                 <div className='group-type'>
                     <input
                         type='checkbox'
-                        //////onChange={handleCheckbox}
+                        onChange={handleCheackbox}
                         name='normal'
                         id='normal'
                     />
@@ -84,7 +84,7 @@ const Filter = () => {
                 <div className='group-type'>
                     <input
                         type='checkbox'
-                        //////onChange={handleCheckbox}
+                        onChange={handleCheackbox}
                         name='psychic'
                         id='psychic'
                     />
@@ -93,7 +93,7 @@ const Filter = () => {
                 <div className='group-type'>
                     <input
                         type='checkbox'
-                        //////onChange={handleCheckbox}
+                        onChange={handleCheackbox}
                         name='steel'
                         id='steel'
                     />
@@ -102,7 +102,7 @@ const Filter = () => {
                 <div className='group-type'>
                     <input
                         type='checkbox'
-                        //////onChange={handleCheckbox}
+                        onChange={handleCheackbox}
                         name='dark'
                         id='dark'
                     />
@@ -111,7 +111,7 @@ const Filter = () => {
                 <div className='group-type'>
                     <input
                         type='checkbox'
-                        ////onChange={handleCheckbox}
+                        onChange={handleCheackbox}
                         name='electric'
                         id='electric'
                     />
@@ -120,7 +120,7 @@ const Filter = () => {
                 <div className='group-type'>
                     <input
                         type='checkbox'
-                        ////onChange={handleCheckbox}
+                        onChange={handleCheackbox}
                         name='fighting'
                         id='fighting'
                     />
@@ -129,7 +129,7 @@ const Filter = () => {
                 <div className='group-type'>
                     <input
                         type='checkbox'
-                        ////onChange={handleCheckbox}
+                        onChange={handleCheackbox}
                         name='flying'
                         id='flying'
                     />
@@ -138,7 +138,7 @@ const Filter = () => {
                 <div className='group-type'>
                     <input
                         type='checkbox'
-                        //onChange={handleCheckbox}
+                        onChange={handleCheackbox}
                         name='ice'
                         id='ice'
                     />
@@ -147,7 +147,7 @@ const Filter = () => {
                 <div className='group-type'>
                     <input
                         type='checkbox'
-                        //onChange={handleCheckbox}
+                        onChange={handleCheackbox}
                         name='poison'
                         id='poison'
                     />
@@ -156,7 +156,7 @@ const Filter = () => {
                 <div className='group-type'>
                     <input
                         type='checkbox'
-                        //onChange={handleCheckbox}
+                        onChange={handleCheackbox}
                         name='rock'
                         id='rock'
                     />
@@ -165,7 +165,7 @@ const Filter = () => {
                 <div className='group-type'>
                     <input
                         type='checkbox'
-                        //onChange={handleCheckbox}
+                        onChange={handleCheackbox}
                         name='water'
                         id='water'
                     />
