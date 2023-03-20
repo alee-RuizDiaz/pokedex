@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 const CardPokemon = ({ pokemon }) => {
   return (
       <Link to={`/pokemon/${pokemon.id}`} className='cursor-pointer '>
-        <div class=" bg-gris flex items-center justify-self-center rounded-xl h-[12rem]">
+        <div className=" bg-gris flex items-center justify-self-center rounded-xl h-[12rem]">
           <img className='h-full w-full'
             src={pokemon.sprites.other.dream_world.front_default}
             alt={`Pokemon ${pokemon.name}`}

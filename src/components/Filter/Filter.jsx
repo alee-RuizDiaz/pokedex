@@ -6,7 +6,7 @@ const Filter = () => {
     const {active} = useContext(PokemonContext)
 
     return (
-        <div className={`flex justify-center fixed top-0 left-[-19rem] w-[15rem] text-[#555] bg-[#f2f2f2] h-full transition-all duration-[.3s] ease-linear ${active ? 'left-0' : ''}`}>
+        <div className={`flex justify-center fixed top-0  w-[15rem] text-[#555] bg-[#f2f2f2] h-full transition-all duration-[.3s] ease-linear ${active ? 'left-[-19rem]' : 'left-0'}`}>
             <div className="flex flex-col gap-5 pt-[5rem]">
                 <span className="font-bold text-2xl">Tipo</span>
                 <div className='group-type'>

@@ -7,7 +7,7 @@ import SearchPage  from '../pages/SearchPage/SearchPage'
 
 const AppRouter = () => {
     return (
-        <div className='lg:px-[20rem] px-5'>
+        <div className='lg:p-5 px-[2rem] lg:px-[20rem]'>
             <NavBar/>
             <Routes>
                     <Route index element={<Home/>}/>
